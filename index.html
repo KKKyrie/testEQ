@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Empathy Quotient</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<link rel="stylesheet" href="http://cdn.bootcss.com/weui/1.1.1/style/weui.min.css">
+		<link rel="stylesheet" href="http://cdn.bootcss.com/jquery-weui/1.0.1/css/jquery-weui.min.css">
+		<style>
+			.text-area{
+				height: 100px !important;
+				font-size: 20px !important;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<!-- main content -->
+		<div class="weui-msg">
+			<div class="weui-msg__text-area text-area">
+				<!-- <h2 class="weui-msg__title">The Empathy Quotient (EQ)</h2> -->
+				<!-- question -->
+				<article class="weui_article">
+					<section>
+						<p id="question">我很容易察觉是不是有人想要加入讨论之中</p>
+					</section>
+				</article>
+			</div>
+			<!-- button area -->
+			<div class="weui-msg__opr-area">
+				<p class="weui-btn-area">
+					<a href="javascript:;" class="weui-btn weui-btn_default yes">非常同意</a>
+					<a href="javascript:;" class="weui-btn weui-btn_default agree">比较同意</a>
+					<a href="javascript:;" class="weui-btn weui-btn_default disagree">比较不同意</a>
+					<a href="javascript:;" class="weui-btn weui-btn_default no">非常不同意</a>
+					<a href="javascript:;" class="weui-btn weui-btn_primary reset" style="display: none;">再测一次</a>
+				</p>
+			</div>
+		</div>
+		<!-- footer -->
+		<div class="weui-footer weui-footer_fixed-bottom">
+			<!-- hint -->
+			<article class="weui_article">
+				<section>
+					<p>本测试一共有60道题目（<span id="rank">1</span> / 60）</p>
+					<div class="weui-progress">
+						<div class="weui-progress__bar">
+							<div class="weui-progress__inner-bar js_progress" style="width: 0%;"></div>
+						</div>
+					</div>
+				</section>
+			</article>
+			<br />
+			<p class="weui-footer__text">Copyright © 2017 劉凯里</p>
+		</div>
+		<!-- script -->
+		<script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+		<script src="http://cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>
+		<script src="./main01.js"></script>
+	</body>
+</html>
