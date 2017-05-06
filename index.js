@@ -219,6 +219,7 @@ KTest.prototype = {
 		$('.js_progress').css({
 			width: '0%'
 		});
+		this.score = 0;
 		this.$questionObj.text(that.questions[0]);
 		this.$rank.text('1');
 	}
