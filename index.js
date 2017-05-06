@@ -81,9 +81,19 @@ KTest.prototype = {
 
 	init: function() {
 		var that = this;
-		$('.weui-btn_default').on('click', function() {
-			that._next();
+
+		$('.weui-btn-area').on('click', function(e){
+			e.stopPropagation();
+			var _className = e.target.className;
+			var className = _className.substr(9, 16);
+			if (className == 'weui-btn_default'){
+				that._next();
+			}else{
+				console.log(_className);
+				return;
+			}
 		});
+
 
 		$('.weui-btn_primary').on('click', function() {
 			that._reset();
@@ -122,9 +132,6 @@ KTest.prototype = {
 
 		// remove all event listener
 		$('.weui-btn_default').off('click');
-		$('.weui-btn_default').on('click', function() {
-			that._next();
-		});
 
 
 		/*

@@ -5,6 +5,6 @@ var rename = require('gulp-rename');
 gulp.task('default', function(){
 	gulp.src('./index.js')
 	.pipe(uglify())
-	.pipe(rename('test-eq.js'))
+	.pipe(rename('eq-test.js'))
 	.pipe(gulp.dest('./'));
 });
